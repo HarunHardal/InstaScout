@@ -407,7 +407,7 @@ class InstagramScraper {
             // Kriterlere göre filtrele
             if (accountInfo.isBusinessAccount &&
               accountInfo.followers <= maxFollowers &&
-              accountInfo.followers > 100) { // Minimum 100 takipçi filtresi
+              accountInfo.followers > 10) { // Minimum 100 takipçi filtresi
 
               // Şehir filtresi (eğer belirtildiyse)
               if (city) {
