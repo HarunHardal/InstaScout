@@ -7,7 +7,7 @@ const { RateLimiterMemory } = require('rate-limiter-flexible');
 const InstagramScraper = require('./scraper');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 // Rate limiter - 25 requests per hour per IP
 const rateLimiter = new RateLimiterMemory({
@@ -281,3 +281,4 @@ process.on('SIGINT', async () => {
 });
 
 startServer().catch(console.error);
+
